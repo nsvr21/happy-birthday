@@ -1,0 +1,301 @@
+<html class="scroll-smooth" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Ucapan Ulang Tahun Sayang
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff0f5;
+      overflow-x: hidden;
+    }
+    .font-script {
+      font-family: 'Great Vibes', cursive;
+    }
+    /* Animasi teks muncul pelan */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fadeInUp {
+      animation: fadeInUp 2s ease forwards;
+    }
+    /* Animasi teks berdenyut */
+    @keyframes pulseText {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    }
+    .pulseText {
+      animation: pulseText 2.5s ease-in-out infinite;
+    }
+    /* Hati jatuh */
+    .heart {
+      position: fixed;
+      width: 24px;
+      height: 24px;
+      background-color: #f9c0c0;
+      clip-path: polygon(
+        50% 0%,
+        61% 7%,
+        68% 15%,
+        75% 25%,
+        75% 40%,
+        75% 55%,
+        68% 65%,
+        60% 75%,
+        50% 85%,
+        40% 75%,
+        32% 65%,
+        25% 55%,
+        25% 40%,
+        25% 25%,
+        32% 15%,
+        39% 7%
+      );
+      opacity: 0.8;
+      animation-name: fallHeart;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    @keyframes fallHeart {
+      0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+ </head>
+ <body class="bg-gradient-to-b from-pink-50 via-cream-50 to-white min-h-screen flex flex-col justify-center items-center px-6 py-12">
+  <!-- Halaman 1 -->
+  <section class="w-full max-w-xl text-center flex flex-col justify-center items-center min-h-screen" id="page1">
+   <h1 class="text-5xl sm:text-6xl font-script text-pink-400 opacity-0 fadeInUp" style="animation-delay: 0.5s">
+    Happy Birthday Sayang!
+   </h1>
+   <button aria-label="Lanjut ke halaman berikutnya" class="mt-12 px-8 py-3 bg-pink-300 hover:bg-pink-400 text-white rounded-full font-semibold text-lg shadow-lg transition-colors duration-300" id="next1">
+    Lanjut
+   </button>
+  </section>
+  <!-- Halaman 2 -->
+  <section class="hidden w-full max-w-xl min-h-screen flex flex-col justify-center items-center relative px-6" id="page2">
+   <div aria-hidden="true" class="absolute inset-0 overflow-hidden pointer-events-none">
+   </div>
+   <p class="text-center text-xl sm:text-2xl text-pink-600 max-w-lg font-semibold leading-relaxed z-10" style="font-style: italic">
+    Terima kasih sudah hadir di hidup aku.
+    <br/>
+    Semoga di umur kamu yang baru, semua doa kamu terkabul.
+    <br/>
+    Aku sayang kamu.
+   </p>
+   <div class="flex gap-6 mt-12 z-10">
+    <button aria-label="Kembali ke halaman sebelumnya" class="px-6 py-2 bg-cream-200 hover:bg-cream-300 text-pink-600 rounded-full font-semibold text-base shadow-md transition-colors duration-300" id="prev2">
+     Kembali
+    </button>
+    <button aria-label="Lanjut ke halaman berikutnya" class="px-6 py-2 bg-pink-300 hover:bg-pink-400 text-white rounded-full font-semibold text-base shadow-md transition-colors duration-300" id="next2">
+     Lanjut
+    </button>
+   </div>
+   <!-- Hati jatuh container -->
+   <div class="pointer-events-none fixed inset-0 z-0" id="hearts-container">
+   </div>
+  </section>
+  <!-- Halaman 3 -->
+  <section class="hidden w-full max-w-xl min-h-screen flex flex-col justify-center items-center relative px-6" id="page3">
+   <div aria-hidden="true" class="absolute inset-0 overflow-hidden pointer-events-none" id="hearts-container-3">
+   </div>
+   <h2 class="text-3xl font-semibold text-pink-500 mb-8 font-script z-10 relative">
+    Tentang Kamu
+   </h2>
+   <div class="text-pink-700 max-w-md text-base leading-relaxed font-semibold space-y-3 z-10 relative">
+    <p>
+     Aku tuh suka banget sama kamu, cara kamu selalu berusaha buat bikin aku bahagia.
+    </p>
+    <p>
+     Kamu romantis, perhatian, dan selalu peduli sama
+    </p>
+    <p>
+     Aku seneng banget karena kamu selalu nurutin kemauan aku, beliin apa yang aku mau, dan gak pernah capek kasih effort buat aku.
+    </p>
+    <p>
+     Aku suka liat kamu senyum, senyum kamu yang manis.
+    </p>
+    <p>
+     Aku suka banget kalo kamu ngeperlakuin aku kayak anak kecil, sabar banget sama aku, apalagi kalo kamu gandeng tangan aku.
+    </p>
+    <p>
+     Hal-hal kecil kayak gitu tuh bikin aku makin sayang sama kamu setiap hari.
+    </p>
+   </div>
+   <div class="flex gap-6 mt-12 w-full max-w-md justify-between z-10 relative">
+    <button aria-label="Kembali ke halaman sebelumnya" class="px-6 py-2 bg-cream-200 hover:bg-cream-300 text-pink-600 rounded-full font-semibold text-base shadow-md transition-colors duration-300" id="prev3">
+     Kembali
+    </button>
+    <button aria-label="Lanjut ke halaman berikutnya" class="px-6 py-2 bg-pink-300 hover:bg-pink-400 text-white rounded-full font-semibold text-base shadow-md transition-colors duration-300" id="next3">
+     Lanjut
+    </button>
+   </div>
+  </section>
+  <!-- Halaman 4 -->
+  <section class="hidden w-full max-w-xl min-h-screen flex flex-col justify-center items-center px-6" id="page4">
+   <h2 class="text-3xl font-semibold text-pink-500 mb-8 font-script">
+    Galeri Kita
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-lg">
+    <img alt="Pasangan sedang duduk di taman dengan latar belakang bunga sakura berwarna pastel pink dan putih" class="rounded-lg shadow-lg object-cover w-full h-64" height="300" loading="lazy" src="fto2.jpg" width="400"/>
+    <img alt="Pasangan berpelukan di pantai saat matahari terbenam dengan warna langit pastel cream dan pink" class="rounded-lg shadow-lg object-cover w-full h-64" height="300" loading="lazy" src="fto1.jpg" width="400"/>
+    <img alt="Pasangan tertawa bersama di kafe dengan dekorasi pastel pink dan cream yang hangat" class="rounded-lg shadow-lg object-cover w-full h-64" height="300" loading="lazy" src="fto3.jpg" width="400"/>
+    <img alt="Pasangan berjalan bergandengan tangan di jalan setapak dengan latar belakang bunga dan daun berwarna pastel lembut" class="rounded-lg shadow-lg object-cover w-full h-64" height="300" loading="lazy" src="fto4.jpg" width="400"/>
+   </div>
+   <div class="flex gap-6 mt-12 w-full max-w-lg justify-between">
+    <button aria-label="Kembali ke halaman sebelumnya" class="px-6 py-2 bg-cream-200 hover:bg-cream-300 text-pink-600 rounded-full font-semibold text-base shadow-md transition-colors duration-300" id="prev4">
+     Kembali
+    </button>
+    <button aria-label="Lanjut ke halaman berikutnya" class="px-6 py-2 bg-pink-300 hover:bg-pink-400 text-white rounded-full font-semibold text-base shadow-md transition-colors duration-300" id="next4">
+     Lanjut
+    </button>
+   </div>
+  </section>
+  <!-- Halaman 5 -->
+  <section class="hidden w-full max-w-xl min-h-screen flex flex-col justify-center items-center px-6 relative" id="page5">
+   <h1 aria-label="I love you" class="text-6xl sm:text-7xl font-script text-pink-400 pulseText select-none">
+    I love you
+   </h1>
+   <div class="mt-12 w-full max-w-md">
+    <audio aria-label="Musik latar romantis instrumental" autoplay="" class="w-full rounded-lg shadow-lg" controls="" id="romantic-music" loop="">
+     <source src="Stephanie Poetri - I Love You 3000.mp3" type="audio/mpeg"/>
+     Your browser does not support the audio element.
+    </audio>
+   </div>
+   <div class="flex gap-6 mt-12 w-full max-w-md justify-start">
+    <button aria-label="Kembali ke halaman sebelumnya" class="px-6 py-2 bg-cream-200 hover:bg-cream-300 text-pink-600 rounded-full font-semibold text-base shadow-md transition-colors duration-300" id="prev5">
+     Kembali
+    </button>
+   </div>
+  </section>
+  <script>
+   // Pages
+    const page1 = document.getElementById('page1');
+    const page2 = document.getElementById('page2');
+    const page3 = document.getElementById('page3');
+    const page4 = document.getElementById('page4');
+    const page5 = document.getElementById('page5');
+
+    // Buttons
+    const next1 = document.getElementById('next1');
+    const prev2 = document.getElementById('prev2');
+    const next2 = document.getElementById('next2');
+    const prev3 = document.getElementById('prev3');
+    const next3 = document.getElementById('next3');
+    const prev4 = document.getElementById('prev4');
+    const next4 = document.getElementById('next4');
+    const prev5 = document.getElementById('prev5');
+
+    // Hearts containers
+    const heartsContainer2 = document.getElementById('hearts-container');
+    const heartsContainer3 = document.getElementById('hearts-container-3');
+
+    // Show page function
+    function showPage(pageToShow) {
+      [page1, page2, page3, page4, page5].forEach((p) => {
+        if (p === pageToShow) {
+          p.classList.remove('hidden');
+          p.classList.add('flex');
+        } else {
+          p.classList.add('hidden');
+          p.classList.remove('flex');
+        }
+      });
+    }
+
+    // Initial page
+    showPage(page1);
+
+    // Navigation events
+    next1.addEventListener('click', () => {
+      showPage(page2);
+      startHearts(heartsContainer2);
+    });
+    prev2.addEventListener('click', () => {
+      showPage(page1);
+      stopHearts(heartsContainer2);
+    });
+    next2.addEventListener('click', () => {
+      showPage(page3);
+      stopHearts(heartsContainer2);
+      startHearts(heartsContainer3);
+    });
+    prev3.addEventListener('click', () => {
+      showPage(page2);
+      stopHearts(heartsContainer3);
+      startHearts(heartsContainer2);
+    });
+    next3.addEventListener('click', () => {
+      showPage(page4);
+      stopHearts(heartsContainer3);
+    });
+    prev4.addEventListener('click', () => {
+      showPage(page3);
+    });
+    next4.addEventListener('click', () => {
+      showPage(page5);
+    });
+    prev5.addEventListener('click', () => {
+      showPage(page4);
+    });
+
+    // Hearts animation logic
+    let heartsInterval;
+    function createHeart(container) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      // Random horizontal start position
+      heart.style.left = Math.random() * 100 + 'vw';
+      // Random animation duration between 6s and 12s
+      const duration = 6000 + Math.random() * 6000;
+      heart.style.animationDuration = duration + 'ms';
+      // Random size between 16px and 32px
+      const size = 16 + Math.random() * 16;
+      heart.style.width = size + 'px';
+      heart.style.height = size + 'px';
+      container.appendChild(heart);
+
+      // Remove heart after animation ends
+      setTimeout(() => {
+        heart.remove();
+      }, duration);
+    }
+
+    function startHearts(container) {
+      if (heartsInterval) return;
+      createHeart(container);
+      heartsInterval = setInterval(() => createHeart(container), 400);
+    }
+    function stopHearts(container) {
+      clearInterval(heartsInterval);
+      heartsInterval = null;
+      container.innerHTML = '';
+    }
+  </script>
+ </body>
+</html>
